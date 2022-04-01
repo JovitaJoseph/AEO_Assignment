@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="12" passed="12" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-03-31T19:39:39 EDT" name="Default suite" finished-at="2022-03-31T19:40:47 EDT" duration-ms="68905">
+    <groups>
+    </groups>
+    <test started-at="2022-03-31T19:39:39 EDT" name="Default test" finished-at="2022-03-31T19:40:47 EDT" duration-ms="68905">
+      <class name="jovita.ae.Assignment.AESearchGiftCardCheckout">
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:jovita.ae.Assignment.AESearchGiftCardCheckout@1aa7ecca]" started-at="2022-03-31T19:39:39 EDT" name="openBrowser" finished-at="2022-03-31T19:39:42 EDT" duration-ms="2956" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method signature="locateSearch()[pri:1, instance:jovita.ae.Assignment.AESearchGiftCardCheckout@1aa7ecca]" started-at="2022-03-31T19:39:42 EDT" name="locateSearch" finished-at="2022-03-31T19:39:47 EDT" duration-ms="5647" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- locateSearch -->
+        <test-method signature="locateProduct()[pri:2, instance:jovita.ae.Assignment.AESearchGiftCardCheckout@1aa7ecca]" started-at="2022-03-31T19:39:47 EDT" name="locateProduct" finished-at="2022-03-31T19:39:54 EDT" depends-on-methods="jovita.ae.Assignment.AESearchGiftCardCheckout.locateSearch" duration-ms="7235" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- locateProduct -->
+        <test-method signature="selectColor()[pri:3, instance:jovita.ae.Assignment.AESearchGiftCardCheckout@1aa7ecca]" started-at="2022-03-31T19:39:54 EDT" name="selectColor" finished-at="2022-03-31T19:39:59 EDT" depends-on-methods="jovita.ae.Assignment.AESearchGiftCardCheckout.locateProduct" duration-ms="4314" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectColor -->
+        <test-method signature="selectSize()[pri:4, instance:jovita.ae.Assignment.AESearchGiftCardCheckout@1aa7ecca]" started-at="2022-03-31T19:39:59 EDT" name="selectSize" finished-at="2022-03-31T19:40:03 EDT" depends-on-methods="jovita.ae.Assignment.AESearchGiftCardCheckout.selectColor" duration-ms="4261" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectSize -->
+        <test-method signature="selectQuantity()[pri:5, instance:jovita.ae.Assignment.AESearchGiftCardCheckout@1aa7ecca]" started-at="2022-03-31T19:40:03 EDT" name="selectQuantity" finished-at="2022-03-31T19:40:05 EDT" depends-on-methods="jovita.ae.Assignment.AESearchGiftCardCheckout.selectSize" duration-ms="2136" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectQuantity -->
+        <test-method signature="clickAddToBag()[pri:6, instance:jovita.ae.Assignment.AESearchGiftCardCheckout@1aa7ecca]" started-at="2022-03-31T19:40:05 EDT" name="clickAddToBag" finished-at="2022-03-31T19:40:07 EDT" depends-on-methods="jovita.ae.Assignment.AESearchGiftCardCheckout.selectQuantity" duration-ms="2167" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickAddToBag -->
+        <test-method signature="clickViewBag()[pri:7, instance:jovita.ae.Assignment.AESearchGiftCardCheckout@1aa7ecca]" started-at="2022-03-31T19:40:07 EDT" name="clickViewBag" finished-at="2022-03-31T19:40:09 EDT" depends-on-methods="jovita.ae.Assignment.AESearchGiftCardCheckout.clickAddToBag" duration-ms="2193" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickViewBag -->
+        <test-method signature="proceedToCheckout()[pri:8, instance:jovita.ae.Assignment.AESearchGiftCardCheckout@1aa7ecca]" started-at="2022-03-31T19:40:09 EDT" name="proceedToCheckout" finished-at="2022-03-31T19:40:20 EDT" depends-on-methods="jovita.ae.Assignment.AESearchGiftCardCheckout.clickViewBag" duration-ms="10338" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- proceedToCheckout -->
+        <test-method signature="personalInfo()[pri:9, instance:jovita.ae.Assignment.AESearchGiftCardCheckout@1aa7ecca]" started-at="2022-03-31T19:40:20 EDT" name="personalInfo" finished-at="2022-03-31T19:40:29 EDT" depends-on-methods="jovita.ae.Assignment.AESearchGiftCardCheckout.proceedToCheckout" duration-ms="9467" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- personalInfo -->
+        <test-method signature="addressInfo()[pri:10, instance:jovita.ae.Assignment.AESearchGiftCardCheckout@1aa7ecca]" started-at="2022-03-31T19:40:29 EDT" name="addressInfo" finished-at="2022-03-31T19:40:32 EDT" depends-on-methods="jovita.ae.Assignment.AESearchGiftCardCheckout.personalInfo" duration-ms="2236" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addressInfo -->
+        <test-method signature="giftCardInfo()[pri:11, instance:jovita.ae.Assignment.AESearchGiftCardCheckout@1aa7ecca]" started-at="2022-03-31T19:40:32 EDT" name="giftCardInfo" finished-at="2022-03-31T19:40:43 EDT" depends-on-methods="jovita.ae.Assignment.AESearchGiftCardCheckout.addressInfo" duration-ms="11647" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- giftCardInfo -->
+        <test-method signature="ErrorMessage()[pri:12, instance:jovita.ae.Assignment.AESearchGiftCardCheckout@1aa7ecca]" started-at="2022-03-31T19:40:43 EDT" name="ErrorMessage" finished-at="2022-03-31T19:40:47 EDT" depends-on-methods="jovita.ae.Assignment.AESearchGiftCardCheckout.giftCardInfo" duration-ms="4069" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ErrorMessage -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:jovita.ae.Assignment.AESearchGiftCardCheckout@1aa7ecca]" started-at="2022-03-31T19:40:47 EDT" name="closeBrowser" finished-at="2022-03-31T19:40:47 EDT" duration-ms="204" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- jovita.ae.Assignment.AESearchGiftCardCheckout -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
