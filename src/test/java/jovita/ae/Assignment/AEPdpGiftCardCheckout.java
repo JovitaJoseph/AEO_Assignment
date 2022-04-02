@@ -6,14 +6,13 @@ import org.testng.annotations.Test;
 import jovita.ae.checkout.CheckoutFlow;
 import jovita.ae.driverChrome.AEChromeDriverSetup;
 
-import org.testng.annotations.BeforeTest;
-
 import static org.testng.Assert.assertEquals;
 
 import java.util.Properties;
 
+import org.junit.AfterClass;
 import org.openqa.selenium.WebDriver;
-import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeClass;
 
 public class AEPdpGiftCardCheckout {
 	
@@ -102,7 +101,7 @@ public class AEPdpGiftCardCheckout {
 		assertEquals("THERE'S A PROBLEM WITH YOUR ORDER",message);
 	}
 
-	@BeforeTest
+	@BeforeClass
 	public void beforeTest() {
 		driver=AEChromeDriverSetup.getDriver(pdpURL);
 
@@ -116,9 +115,9 @@ public class AEPdpGiftCardCheckout {
 	}
 
 
-	@AfterTest
+	@AfterClass
 	public void afterTest() {
-		driver.quit();
+		driver.close();
 	}
 
 }

@@ -103,3 +103,18 @@ Selenium
 Driver Set up code is available at src/main/java/jovita.ae.driverChrome/AEChromeDriverSetup.java
 
 ChromeDriver.exe, BillingInfoAE.xlsx (Excel file), AEconfig.properties are available at src/main/java/resources
+
+TestNG classes:
+1. AEPdpGiftCardCheckout.java
+2. AEPdpCreditCardCheckout.java
+3. AESearchGiftCardCheckout.java
+4. AESearchCCardCheckout.java
+
+Added all the above 4 testNG classes in testng.xml.
+Run testng.xml as "TestNG suite"
+All the 4 testNG classes were executed one after another in TestNG suite.
+
+Test Reports:
+1. Open the folder "test-output". 
+2. Right Click "index.html". Open with webBrowser to see the test results.
+

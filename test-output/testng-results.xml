@@ -1,69 +1,219 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="12" passed="12" failed="0" skipped="0">
+<testng-results ignored="0" total="46" passed="46" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-03-31T19:39:39 EDT" name="Default suite" finished-at="2022-03-31T19:40:47 EDT" duration-ms="68905">
+  <suite started-at="2022-04-02T13:12:16 EDT" name="Suite" finished-at="2022-04-02T13:16:40 EDT" duration-ms="263860">
     <groups>
     </groups>
-    <test started-at="2022-03-31T19:39:39 EDT" name="Default test" finished-at="2022-03-31T19:40:47 EDT" duration-ms="68905">
-      <class name="jovita.ae.Assignment.AESearchGiftCardCheckout">
-        <test-method is-config="true" signature="openBrowser()[pri:0, instance:jovita.ae.Assignment.AESearchGiftCardCheckout@1aa7ecca]" started-at="2022-03-31T19:39:39 EDT" name="openBrowser" finished-at="2022-03-31T19:39:42 EDT" duration-ms="2956" status="PASS">
+    <test started-at="2022-04-02T13:12:16 EDT" name="Test" finished-at="2022-04-02T13:16:40 EDT" duration-ms="263860">
+      <class name="jovita.ae.Assignment.AEPdpCreditCardCheckout">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:jovita.ae.Assignment.AEPdpCreditCardCheckout@36902638]" started-at="2022-04-02T13:13:25 EDT" name="beforeTest" finished-at="2022-04-02T13:13:27 EDT" duration-ms="2172" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- openBrowser -->
-        <test-method signature="locateSearch()[pri:1, instance:jovita.ae.Assignment.AESearchGiftCardCheckout@1aa7ecca]" started-at="2022-03-31T19:39:42 EDT" name="locateSearch" finished-at="2022-03-31T19:39:47 EDT" duration-ms="5647" status="PASS">
+        </test-method> <!-- beforeTest -->
+        <test-method signature="color()[pri:1, instance:jovita.ae.Assignment.AEPdpCreditCardCheckout@36902638]" started-at="2022-04-02T13:13:27 EDT" name="color" finished-at="2022-04-02T13:13:38 EDT" duration-ms="10254" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- locateSearch -->
-        <test-method signature="locateProduct()[pri:2, instance:jovita.ae.Assignment.AESearchGiftCardCheckout@1aa7ecca]" started-at="2022-03-31T19:39:47 EDT" name="locateProduct" finished-at="2022-03-31T19:39:54 EDT" depends-on-methods="jovita.ae.Assignment.AESearchGiftCardCheckout.locateSearch" duration-ms="7235" status="PASS">
+        </test-method> <!-- color -->
+        <test-method signature="size()[pri:2, instance:jovita.ae.Assignment.AEPdpCreditCardCheckout@36902638]" started-at="2022-04-02T13:13:38 EDT" name="size" finished-at="2022-04-02T13:13:42 EDT" depends-on-methods="jovita.ae.Assignment.AEPdpCreditCardCheckout.color" duration-ms="4244" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- locateProduct -->
-        <test-method signature="selectColor()[pri:3, instance:jovita.ae.Assignment.AESearchGiftCardCheckout@1aa7ecca]" started-at="2022-03-31T19:39:54 EDT" name="selectColor" finished-at="2022-03-31T19:39:59 EDT" depends-on-methods="jovita.ae.Assignment.AESearchGiftCardCheckout.locateProduct" duration-ms="4314" status="PASS">
+        </test-method> <!-- size -->
+        <test-method signature="noOfItems()[pri:3, instance:jovita.ae.Assignment.AEPdpCreditCardCheckout@36902638]" started-at="2022-04-02T13:13:42 EDT" name="noOfItems" finished-at="2022-04-02T13:13:44 EDT" depends-on-methods="jovita.ae.Assignment.AEPdpCreditCardCheckout.size" duration-ms="2123" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- selectColor -->
-        <test-method signature="selectSize()[pri:4, instance:jovita.ae.Assignment.AESearchGiftCardCheckout@1aa7ecca]" started-at="2022-03-31T19:39:59 EDT" name="selectSize" finished-at="2022-03-31T19:40:03 EDT" depends-on-methods="jovita.ae.Assignment.AESearchGiftCardCheckout.selectColor" duration-ms="4261" status="PASS">
+        </test-method> <!-- noOfItems -->
+        <test-method signature="addBag()[pri:4, instance:jovita.ae.Assignment.AEPdpCreditCardCheckout@36902638]" started-at="2022-04-02T13:13:44 EDT" name="addBag" finished-at="2022-04-02T13:13:46 EDT" depends-on-methods="jovita.ae.Assignment.AEPdpCreditCardCheckout.noOfItems" duration-ms="2146" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- selectSize -->
-        <test-method signature="selectQuantity()[pri:5, instance:jovita.ae.Assignment.AESearchGiftCardCheckout@1aa7ecca]" started-at="2022-03-31T19:40:03 EDT" name="selectQuantity" finished-at="2022-03-31T19:40:05 EDT" depends-on-methods="jovita.ae.Assignment.AESearchGiftCardCheckout.selectSize" duration-ms="2136" status="PASS">
+        </test-method> <!-- addBag -->
+        <test-method signature="viewBag()[pri:5, instance:jovita.ae.Assignment.AEPdpCreditCardCheckout@36902638]" started-at="2022-04-02T13:13:46 EDT" name="viewBag" finished-at="2022-04-02T13:13:52 EDT" depends-on-methods="jovita.ae.Assignment.AEPdpCreditCardCheckout.addBag" duration-ms="6156" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- selectQuantity -->
-        <test-method signature="clickAddToBag()[pri:6, instance:jovita.ae.Assignment.AESearchGiftCardCheckout@1aa7ecca]" started-at="2022-03-31T19:40:05 EDT" name="clickAddToBag" finished-at="2022-03-31T19:40:07 EDT" depends-on-methods="jovita.ae.Assignment.AESearchGiftCardCheckout.selectQuantity" duration-ms="2167" status="PASS">
+        </test-method> <!-- viewBag -->
+        <test-method signature="proceedCheckout()[pri:6, instance:jovita.ae.Assignment.AEPdpCreditCardCheckout@36902638]" started-at="2022-04-02T13:13:52 EDT" name="proceedCheckout" finished-at="2022-04-02T13:14:03 EDT" depends-on-methods="jovita.ae.Assignment.AEPdpCreditCardCheckout.viewBag" duration-ms="10273" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- clickAddToBag -->
-        <test-method signature="clickViewBag()[pri:7, instance:jovita.ae.Assignment.AESearchGiftCardCheckout@1aa7ecca]" started-at="2022-03-31T19:40:07 EDT" name="clickViewBag" finished-at="2022-03-31T19:40:09 EDT" depends-on-methods="jovita.ae.Assignment.AESearchGiftCardCheckout.clickAddToBag" duration-ms="2193" status="PASS">
+        </test-method> <!-- proceedCheckout -->
+        <test-method signature="shippingInfo()[pri:7, instance:jovita.ae.Assignment.AEPdpCreditCardCheckout@36902638]" started-at="2022-04-02T13:14:03 EDT" name="shippingInfo" finished-at="2022-04-02T13:14:13 EDT" depends-on-methods="jovita.ae.Assignment.AEPdpCreditCardCheckout.proceedCheckout" duration-ms="10839" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- clickViewBag -->
-        <test-method signature="proceedToCheckout()[pri:8, instance:jovita.ae.Assignment.AESearchGiftCardCheckout@1aa7ecca]" started-at="2022-03-31T19:40:09 EDT" name="proceedToCheckout" finished-at="2022-03-31T19:40:20 EDT" depends-on-methods="jovita.ae.Assignment.AESearchGiftCardCheckout.clickViewBag" duration-ms="10338" status="PASS">
+        </test-method> <!-- shippingInfo -->
+        <test-method signature="address()[pri:8, instance:jovita.ae.Assignment.AEPdpCreditCardCheckout@36902638]" started-at="2022-04-02T13:14:13 EDT" name="address" finished-at="2022-04-02T13:14:18 EDT" depends-on-methods="jovita.ae.Assignment.AEPdpCreditCardCheckout.shippingInfo" duration-ms="4260" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- proceedToCheckout -->
-        <test-method signature="personalInfo()[pri:9, instance:jovita.ae.Assignment.AESearchGiftCardCheckout@1aa7ecca]" started-at="2022-03-31T19:40:20 EDT" name="personalInfo" finished-at="2022-03-31T19:40:29 EDT" depends-on-methods="jovita.ae.Assignment.AESearchGiftCardCheckout.proceedToCheckout" duration-ms="9467" status="PASS">
+        </test-method> <!-- address -->
+        <test-method signature="CardInfo()[pri:9, instance:jovita.ae.Assignment.AEPdpCreditCardCheckout@36902638]" started-at="2022-04-02T13:14:18 EDT" name="CardInfo" finished-at="2022-04-02T13:14:22 EDT" depends-on-methods="jovita.ae.Assignment.AEPdpCreditCardCheckout.address" duration-ms="3913" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- personalInfo -->
-        <test-method signature="addressInfo()[pri:10, instance:jovita.ae.Assignment.AESearchGiftCardCheckout@1aa7ecca]" started-at="2022-03-31T19:40:29 EDT" name="addressInfo" finished-at="2022-03-31T19:40:32 EDT" depends-on-methods="jovita.ae.Assignment.AESearchGiftCardCheckout.personalInfo" duration-ms="2236" status="PASS">
+        </test-method> <!-- CardInfo -->
+        <test-method signature="placeOrder()[pri:10, instance:jovita.ae.Assignment.AEPdpCreditCardCheckout@36902638]" started-at="2022-04-02T13:14:22 EDT" name="placeOrder" finished-at="2022-04-02T13:14:28 EDT" depends-on-methods="jovita.ae.Assignment.AEPdpCreditCardCheckout.CardInfo" duration-ms="6217" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addressInfo -->
-        <test-method signature="giftCardInfo()[pri:11, instance:jovita.ae.Assignment.AESearchGiftCardCheckout@1aa7ecca]" started-at="2022-03-31T19:40:32 EDT" name="giftCardInfo" finished-at="2022-03-31T19:40:43 EDT" depends-on-methods="jovita.ae.Assignment.AESearchGiftCardCheckout.addressInfo" duration-ms="11647" status="PASS">
+        </test-method> <!-- placeOrder -->
+        <test-method signature="OrderConfirmationTest()[pri:11, instance:jovita.ae.Assignment.AEPdpCreditCardCheckout@36902638]" started-at="2022-04-02T13:14:28 EDT" name="OrderConfirmationTest" finished-at="2022-04-02T13:14:32 EDT" depends-on-methods="jovita.ae.Assignment.AEPdpCreditCardCheckout.placeOrder" duration-ms="4062" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- giftCardInfo -->
-        <test-method signature="ErrorMessage()[pri:12, instance:jovita.ae.Assignment.AESearchGiftCardCheckout@1aa7ecca]" started-at="2022-03-31T19:40:43 EDT" name="ErrorMessage" finished-at="2022-03-31T19:40:47 EDT" depends-on-methods="jovita.ae.Assignment.AESearchGiftCardCheckout.giftCardInfo" duration-ms="4069" status="PASS">
+        </test-method> <!-- OrderConfirmationTest -->
+      </class> <!-- jovita.ae.Assignment.AEPdpCreditCardCheckout -->
+      <class name="jovita.ae.Assignment.AEPdpGiftCardCheckout">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:jovita.ae.Assignment.AEPdpGiftCardCheckout@3a93b025]" started-at="2022-04-02T13:12:16 EDT" name="beforeTest" finished-at="2022-04-02T13:12:19 EDT" duration-ms="3147" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method signature="color()[pri:1, instance:jovita.ae.Assignment.AEPdpGiftCardCheckout@3a93b025]" started-at="2022-04-02T13:12:19 EDT" name="color" finished-at="2022-04-02T13:12:29 EDT" duration-ms="9306" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- color -->
+        <test-method signature="size()[pri:2, instance:jovita.ae.Assignment.AEPdpGiftCardCheckout@3a93b025]" started-at="2022-04-02T13:12:29 EDT" name="size" finished-at="2022-04-02T13:12:33 EDT" depends-on-methods="jovita.ae.Assignment.AEPdpGiftCardCheckout.color" duration-ms="4259" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- size -->
+        <test-method signature="noOfItems()[pri:3, instance:jovita.ae.Assignment.AEPdpGiftCardCheckout@3a93b025]" started-at="2022-04-02T13:12:33 EDT" name="noOfItems" finished-at="2022-04-02T13:12:35 EDT" depends-on-methods="jovita.ae.Assignment.AEPdpGiftCardCheckout.size" duration-ms="2135" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- noOfItems -->
+        <test-method signature="addBag()[pri:4, instance:jovita.ae.Assignment.AEPdpGiftCardCheckout@3a93b025]" started-at="2022-04-02T13:12:35 EDT" name="addBag" finished-at="2022-04-02T13:12:37 EDT" depends-on-methods="jovita.ae.Assignment.AEPdpGiftCardCheckout.noOfItems" duration-ms="2156" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addBag -->
+        <test-method signature="viewBag()[pri:5, instance:jovita.ae.Assignment.AEPdpGiftCardCheckout@3a93b025]" started-at="2022-04-02T13:12:37 EDT" name="viewBag" finished-at="2022-04-02T13:12:43 EDT" depends-on-methods="jovita.ae.Assignment.AEPdpGiftCardCheckout.addBag" duration-ms="6153" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- viewBag -->
+        <test-method signature="proceedCheckout()[pri:6, instance:jovita.ae.Assignment.AEPdpGiftCardCheckout@3a93b025]" started-at="2022-04-02T13:12:43 EDT" name="proceedCheckout" finished-at="2022-04-02T13:12:54 EDT" depends-on-methods="jovita.ae.Assignment.AEPdpGiftCardCheckout.viewBag" duration-ms="10386" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- proceedCheckout -->
+        <test-method signature="shippingInfo()[pri:7, instance:jovita.ae.Assignment.AEPdpGiftCardCheckout@3a93b025]" started-at="2022-04-02T13:12:54 EDT" name="shippingInfo" finished-at="2022-04-02T13:13:05 EDT" depends-on-methods="jovita.ae.Assignment.AEPdpGiftCardCheckout.proceedCheckout" duration-ms="11638" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shippingInfo -->
+        <test-method signature="address()[pri:8, instance:jovita.ae.Assignment.AEPdpGiftCardCheckout@3a93b025]" started-at="2022-04-02T13:13:05 EDT" name="address" finished-at="2022-04-02T13:13:10 EDT" depends-on-methods="jovita.ae.Assignment.AEPdpGiftCardCheckout.shippingInfo" duration-ms="4269" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- address -->
+        <test-method signature="GiftCardInfo()[pri:9, instance:jovita.ae.Assignment.AEPdpGiftCardCheckout@3a93b025]" started-at="2022-04-02T13:13:10 EDT" name="GiftCardInfo" finished-at="2022-04-02T13:13:21 EDT" depends-on-methods="jovita.ae.Assignment.AEPdpGiftCardCheckout.address" duration-ms="11638" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GiftCardInfo -->
+        <test-method signature="ErrorMessage()[pri:10, instance:jovita.ae.Assignment.AEPdpGiftCardCheckout@3a93b025]" started-at="2022-04-02T13:13:21 EDT" name="ErrorMessage" finished-at="2022-04-02T13:13:25 EDT" depends-on-methods="jovita.ae.Assignment.AEPdpGiftCardCheckout.GiftCardInfo" duration-ms="4067" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ErrorMessage -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:jovita.ae.Assignment.AESearchGiftCardCheckout@1aa7ecca]" started-at="2022-03-31T19:40:47 EDT" name="closeBrowser" finished-at="2022-03-31T19:40:47 EDT" duration-ms="204" status="PASS">
+      </class> <!-- jovita.ae.Assignment.AEPdpGiftCardCheckout -->
+      <class name="jovita.ae.Assignment.AESearchCCardCheckout">
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:jovita.ae.Assignment.AESearchCCardCheckout@8f4ea7c]" started-at="2022-04-02T13:15:39 EDT" name="openBrowser" finished-at="2022-04-02T13:15:41 EDT" duration-ms="2318" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- closeBrowser -->
+        </test-method> <!-- openBrowser -->
+        <test-method signature="locateSearch()[pri:1, instance:jovita.ae.Assignment.AESearchCCardCheckout@8f4ea7c]" started-at="2022-04-02T13:15:41 EDT" name="locateSearch" finished-at="2022-04-02T13:15:47 EDT" duration-ms="5650" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- locateSearch -->
+        <test-method signature="locateProduct()[pri:2, instance:jovita.ae.Assignment.AESearchCCardCheckout@8f4ea7c]" started-at="2022-04-02T13:15:47 EDT" name="locateProduct" finished-at="2022-04-02T13:15:54 EDT" depends-on-methods="jovita.ae.Assignment.AESearchCCardCheckout.locateSearch" duration-ms="7249" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- locateProduct -->
+        <test-method signature="selectColor()[pri:3, instance:jovita.ae.Assignment.AESearchCCardCheckout@8f4ea7c]" started-at="2022-04-02T13:15:54 EDT" name="selectColor" finished-at="2022-04-02T13:15:59 EDT" depends-on-methods="jovita.ae.Assignment.AESearchCCardCheckout.locateProduct" duration-ms="4299" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectColor -->
+        <test-method signature="selectSize()[pri:4, instance:jovita.ae.Assignment.AESearchCCardCheckout@8f4ea7c]" started-at="2022-04-02T13:15:59 EDT" name="selectSize" finished-at="2022-04-02T13:16:03 EDT" depends-on-methods="jovita.ae.Assignment.AESearchCCardCheckout.selectColor" duration-ms="4277" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectSize -->
+        <test-method signature="selectQuantity()[pri:5, instance:jovita.ae.Assignment.AESearchCCardCheckout@8f4ea7c]" started-at="2022-04-02T13:16:03 EDT" name="selectQuantity" finished-at="2022-04-02T13:16:03 EDT" depends-on-methods="jovita.ae.Assignment.AESearchCCardCheckout.selectSize" duration-ms="126" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectQuantity -->
+        <test-method signature="clickAddToBag()[pri:6, instance:jovita.ae.Assignment.AESearchCCardCheckout@8f4ea7c]" started-at="2022-04-02T13:16:03 EDT" name="clickAddToBag" finished-at="2022-04-02T13:16:05 EDT" depends-on-methods="jovita.ae.Assignment.AESearchCCardCheckout.selectQuantity" duration-ms="2163" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickAddToBag -->
+        <test-method signature="clickViewBag()[pri:7, instance:jovita.ae.Assignment.AESearchCCardCheckout@8f4ea7c]" started-at="2022-04-02T13:16:05 EDT" name="clickViewBag" finished-at="2022-04-02T13:16:07 EDT" depends-on-methods="jovita.ae.Assignment.AESearchCCardCheckout.clickAddToBag" duration-ms="2176" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickViewBag -->
+        <test-method signature="proceedToCheckout()[pri:8, instance:jovita.ae.Assignment.AESearchCCardCheckout@8f4ea7c]" started-at="2022-04-02T13:16:07 EDT" name="proceedToCheckout" finished-at="2022-04-02T13:16:18 EDT" depends-on-methods="jovita.ae.Assignment.AESearchCCardCheckout.clickViewBag" duration-ms="10358" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- proceedToCheckout -->
+        <test-method signature="personalInfo()[pri:9, instance:jovita.ae.Assignment.AESearchCCardCheckout@8f4ea7c]" started-at="2022-04-02T13:16:18 EDT" name="personalInfo" finished-at="2022-04-02T13:16:27 EDT" depends-on-methods="jovita.ae.Assignment.AESearchCCardCheckout.proceedToCheckout" duration-ms="8892" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- personalInfo -->
+        <test-method signature="addressInfo()[pri:10, instance:jovita.ae.Assignment.AESearchCCardCheckout@8f4ea7c]" started-at="2022-04-02T13:16:27 EDT" name="addressInfo" finished-at="2022-04-02T13:16:29 EDT" depends-on-methods="jovita.ae.Assignment.AESearchCCardCheckout.personalInfo" duration-ms="2252" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addressInfo -->
+        <test-method signature="creditCardDetails()[pri:11, instance:jovita.ae.Assignment.AESearchCCardCheckout@8f4ea7c]" started-at="2022-04-02T13:16:29 EDT" name="creditCardDetails" finished-at="2022-04-02T13:16:31 EDT" depends-on-methods="jovita.ae.Assignment.AESearchCCardCheckout.addressInfo" duration-ms="2130" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- creditCardDetails -->
+        <test-method signature="clickPlaceOrder()[pri:12, instance:jovita.ae.Assignment.AESearchCCardCheckout@8f4ea7c]" started-at="2022-04-02T13:16:31 EDT" name="clickPlaceOrder" finished-at="2022-04-02T13:16:35 EDT" depends-on-methods="jovita.ae.Assignment.AESearchCCardCheckout.creditCardDetails" duration-ms="4240" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickPlaceOrder -->
+        <test-method signature="orderConfirmationMessage()[pri:13, instance:jovita.ae.Assignment.AESearchCCardCheckout@8f4ea7c]" started-at="2022-04-02T13:16:35 EDT" name="orderConfirmationMessage" finished-at="2022-04-02T13:16:40 EDT" depends-on-methods="jovita.ae.Assignment.AESearchCCardCheckout.clickPlaceOrder" duration-ms="4727" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- orderConfirmationMessage -->
+      </class> <!-- jovita.ae.Assignment.AESearchCCardCheckout -->
+      <class name="jovita.ae.Assignment.AESearchGiftCardCheckout">
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:jovita.ae.Assignment.AESearchGiftCardCheckout@223d2c72]" started-at="2022-04-02T13:14:32 EDT" name="openBrowser" finished-at="2022-04-02T13:14:34 EDT" duration-ms="2240" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method signature="locateSearch()[pri:1, instance:jovita.ae.Assignment.AESearchGiftCardCheckout@223d2c72]" started-at="2022-04-02T13:14:34 EDT" name="locateSearch" finished-at="2022-04-02T13:14:40 EDT" duration-ms="5613" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- locateSearch -->
+        <test-method signature="locateProduct()[pri:2, instance:jovita.ae.Assignment.AESearchGiftCardCheckout@223d2c72]" started-at="2022-04-02T13:14:40 EDT" name="locateProduct" finished-at="2022-04-02T13:14:47 EDT" depends-on-methods="jovita.ae.Assignment.AESearchGiftCardCheckout.locateSearch" duration-ms="7209" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- locateProduct -->
+        <test-method signature="selectColor()[pri:3, instance:jovita.ae.Assignment.AESearchGiftCardCheckout@223d2c72]" started-at="2022-04-02T13:14:47 EDT" name="selectColor" finished-at="2022-04-02T13:14:51 EDT" depends-on-methods="jovita.ae.Assignment.AESearchGiftCardCheckout.locateProduct" duration-ms="4289" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectColor -->
+        <test-method signature="selectSize()[pri:4, instance:jovita.ae.Assignment.AESearchGiftCardCheckout@223d2c72]" started-at="2022-04-02T13:14:51 EDT" name="selectSize" finished-at="2022-04-02T13:14:55 EDT" depends-on-methods="jovita.ae.Assignment.AESearchGiftCardCheckout.selectColor" duration-ms="4229" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectSize -->
+        <test-method signature="selectQuantity()[pri:5, instance:jovita.ae.Assignment.AESearchGiftCardCheckout@223d2c72]" started-at="2022-04-02T13:14:55 EDT" name="selectQuantity" finished-at="2022-04-02T13:14:58 EDT" depends-on-methods="jovita.ae.Assignment.AESearchGiftCardCheckout.selectSize" duration-ms="2121" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectQuantity -->
+        <test-method signature="clickAddToBag()[pri:6, instance:jovita.ae.Assignment.AESearchGiftCardCheckout@223d2c72]" started-at="2022-04-02T13:14:58 EDT" name="clickAddToBag" finished-at="2022-04-02T13:15:00 EDT" depends-on-methods="jovita.ae.Assignment.AESearchGiftCardCheckout.selectQuantity" duration-ms="2169" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickAddToBag -->
+        <test-method signature="clickViewBag()[pri:7, instance:jovita.ae.Assignment.AESearchGiftCardCheckout@223d2c72]" started-at="2022-04-02T13:15:00 EDT" name="clickViewBag" finished-at="2022-04-02T13:15:02 EDT" depends-on-methods="jovita.ae.Assignment.AESearchGiftCardCheckout.clickAddToBag" duration-ms="2136" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickViewBag -->
+        <test-method signature="proceedToCheckout()[pri:8, instance:jovita.ae.Assignment.AESearchGiftCardCheckout@223d2c72]" started-at="2022-04-02T13:15:02 EDT" name="proceedToCheckout" finished-at="2022-04-02T13:15:12 EDT" depends-on-methods="jovita.ae.Assignment.AESearchGiftCardCheckout.clickViewBag" duration-ms="10364" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- proceedToCheckout -->
+        <test-method signature="personalInfo()[pri:9, instance:jovita.ae.Assignment.AESearchGiftCardCheckout@223d2c72]" started-at="2022-04-02T13:15:12 EDT" name="personalInfo" finished-at="2022-04-02T13:15:21 EDT" depends-on-methods="jovita.ae.Assignment.AESearchGiftCardCheckout.proceedToCheckout" duration-ms="8781" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- personalInfo -->
+        <test-method signature="addressInfo()[pri:10, instance:jovita.ae.Assignment.AESearchGiftCardCheckout@223d2c72]" started-at="2022-04-02T13:15:21 EDT" name="addressInfo" finished-at="2022-04-02T13:15:23 EDT" depends-on-methods="jovita.ae.Assignment.AESearchGiftCardCheckout.personalInfo" duration-ms="2247" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addressInfo -->
+        <test-method signature="giftCardInfo()[pri:11, instance:jovita.ae.Assignment.AESearchGiftCardCheckout@223d2c72]" started-at="2022-04-02T13:15:23 EDT" name="giftCardInfo" finished-at="2022-04-02T13:15:35 EDT" depends-on-methods="jovita.ae.Assignment.AESearchGiftCardCheckout.addressInfo" duration-ms="11640" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- giftCardInfo -->
+        <test-method signature="ErrorMessage()[pri:12, instance:jovita.ae.Assignment.AESearchGiftCardCheckout@223d2c72]" started-at="2022-04-02T13:15:35 EDT" name="ErrorMessage" finished-at="2022-04-02T13:15:39 EDT" depends-on-methods="jovita.ae.Assignment.AESearchGiftCardCheckout.giftCardInfo" duration-ms="4078" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ErrorMessage -->
       </class> <!-- jovita.ae.Assignment.AESearchGiftCardCheckout -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
