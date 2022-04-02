@@ -6,14 +6,13 @@ import jovita.ae.checkout.CheckoutFlow;
 import jovita.ae.checkout.SearchFlow;
 import jovita.ae.driverChrome.AEChromeDriverSetup;
 
-import org.testng.annotations.BeforeTest;
-
 import static org.testng.Assert.assertEquals;
 
 import java.util.Properties;
 
+import org.junit.AfterClass;
 import org.openqa.selenium.WebDriver;
-import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeClass;
 
 public class AESearchCCardCheckout {
 	//Scenario: Search for a product from homepage search textbox and trying to place order 
@@ -123,14 +122,14 @@ public class AESearchCCardCheckout {
 	 return sf.getConfigProperty();
   }
   
-  @BeforeTest
+  @BeforeClass
   public void openBrowser() {
 	  driver=AEChromeDriverSetup.getDriver(searchURL);
   }
 
-  @AfterTest
+  @AfterClass
   public void closeBrowser() {
-	  driver.quit();
+	  driver.close();
   }
 
 }

@@ -4,13 +4,13 @@ import org.testng.annotations.Test;
 
 import jovita.ae.checkout.CheckoutFlow;
 import jovita.ae.driverChrome.AEChromeDriverSetup;
-import org.testng.annotations.BeforeTest;
-
 import static org.testng.Assert.assertEquals;
 
 import java.util.Properties;
+
+import org.junit.AfterClass;
 import org.openqa.selenium.WebDriver;
-import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeClass;
 
 //Scenario: Selecting a product from PDP and trying to place order 
 //with 411 test credit card. Able to place test order successfully from our side
@@ -105,7 +105,7 @@ public class AEPdpCreditCardCheckout {
   }
   
   
-  @BeforeTest
+  @BeforeClass
   public void beforeTest() throws Exception {
 	  Properties p;
 		p=getProp();
@@ -121,9 +121,9 @@ public class AEPdpCreditCardCheckout {
 	  }
   
 
-  @AfterTest
+  @AfterClass
   public void afterTest() {
-	  driver.quit();
+	  driver.close();
   }
 
 }
