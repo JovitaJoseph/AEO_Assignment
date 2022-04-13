@@ -1,31 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Test(failed)">
-    <groups>
-      <run>
-        <include name="GiftCheckout"/>
-        <include name="CreditCheckout"/>
-      </run>
-    </groups>
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="jovita.ae.Assignment.AEPdpCreditAndGiftCardCheckout">
+      <class name="cucumberTest.TestRunnerAddToBag">
         <methods>
-          <include name="shippingInfo"/>
-          <include name="ErrorMessage"/>
-          <include name="proceedCheckout"/>
-          <include name="noOfItems"/>
-          <include name="viewBag"/>
-          <include name="addBag"/>
-          <include name="size"/>
-          <include name="CardInfo"/>
-          <include name="address"/>
-          <include name="OrderConfirmationTest"/>
-          <include name="GiftCardInfo"/>
-          <include name="color"/>
-          <include name="placeOrder"/>
+          <include name="setUpClass"/>
+          <include name="runScenario" invocation-numbers="1"/>
+          <include name="tearDownClass"/>
         </methods>
-      </class> <!-- jovita.ae.Assignment.AEPdpCreditAndGiftCardCheckout -->
+      </class> <!-- cucumberTest.TestRunnerAddToBag -->
     </classes>
-  </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

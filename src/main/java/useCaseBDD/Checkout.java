@@ -1,5 +1,4 @@
-package jovita.ae.checkout;
-
+package useCaseBDD;
 import java.io.File;
 import java.io.FileInputStream;
 import java.util.ArrayList;
@@ -14,15 +13,21 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import jovita.ae.driverChrome.AEChromeDriverSetup;
 
-public class CheckoutFlow {
+public class Checkout {
 
 	static WebDriver driver;
+	AEChromeDriverSetup driverSetup;
+
 	//static Properties p;
 	public static final String path="src\\main\\resources\\ExcelFile\\BillingInfoAE.xlsx";
 	public final static String pdpURL ="https://www.ae.com/us/en/p/men/skinny-jeans/skinny-jeans/ae-airflex-360-patched-skinny-jean/0119_6026_048?menu=cat4840004";
+	public Checkout(AEChromeDriverSetup dsetup) {
+		this.driver=driverSetup.getDriver(pdpURL);
+//		this.p =getConfigProperty();
+	}
 
 
-	public CheckoutFlow(WebDriver driver) {
+	public Checkout(WebDriver driver) {
 		this.driver=driver;
 //		this.p =getConfigProperty();
 	}
@@ -39,7 +44,8 @@ public class CheckoutFlow {
 
 	public static WebDriver getDriver() {
 		WebDriver driver;
-		driver=AEChromeDriverSetup.getDriver(pdpURL);
+		AEChromeDriverSetup driverSetup =new AEChromeDriverSetup();
+		driver=driverSetup.getDriver(pdpURL);
 		return driver;
 	}
 
@@ -78,8 +84,18 @@ public class CheckoutFlow {
 		return driver;
 
 	}
-	
-	
+
+	/*
+	public WebDriver getHeaderAddedToBagWindow(WebDriver driver,Properties p) {
+//		String ExpHeader=driver.findElement(By.xpath("//h2[@class='modal-title']")).getText();
+//		String ActualHeader="Added To Bag:";
+//	Assert.assertEquals(ActualHeader, ExpHeader);
+		System.out.println("View Bag window");
+		return driver;
+	}
+		
+	*/
+
 	public  WebDriver ViewBag(WebDriver driver,Properties p) {
 		driver.findElement(By.xpath(p.getProperty("ViewBagButton"))).click();
 		return driver;
@@ -271,7 +287,7 @@ public class CheckoutFlow {
 
 		WebDriver driver=getDriver();
 		Properties p=getConfigProperty();
-		CheckoutFlow cFlow=new CheckoutFlow(driver);
+		Checkout cFlow=new Checkout(driver);
 
 		Thread.sleep(4000);
 		cFlow.select_color(driver,p);
@@ -299,3 +315,10 @@ public class CheckoutFlow {
 	}
 
 }
+
+
+
+
+
+
+

@@ -3,24 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="jovita.ae.Assignment.AESearchGiftCardCheckout">
+      <class name="cucumberTest.TestRunnerAddToBag">
         <methods>
-          <include name="selectColor"/>
-          <include name="locateProduct"/>
-          <include name="selectQuantity"/>
-          <include name="giftCardInfo"/>
-          <include name="clickAddToBag"/>
-          <include name="proceedToCheckout"/>
-          <include name="personalInfo"/>
-          <include name="closeBrowser"/>
-          <include name="addressInfo"/>
-          <include name="ErrorMessage"/>
-          <include name="openBrowser"/>
-          <include name="locateSearch"/>
-          <include name="selectSize"/>
-          <include name="clickViewBag"/>
+          <include name="setUpClass"/>
+          <include name="runScenario" invocation-numbers="1"/>
+          <include name="tearDownClass"/>
         </methods>
-      </class> <!-- jovita.ae.Assignment.AESearchGiftCardCheckout -->
+      </class> <!-- cucumberTest.TestRunnerAddToBag -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
